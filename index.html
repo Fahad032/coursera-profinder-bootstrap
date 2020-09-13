@@ -14,6 +14,28 @@
 
     <!-- navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile.html">Contact</a>
+                </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <div class="row">
                 <a class="navbar-brand" href="#">ProFinder</a>
@@ -37,7 +59,7 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <!-- /navigation -->
 
     <!-- search-box -->
@@ -49,11 +71,11 @@
                     <div class="search-from">
                         <form>
                             <div class="form-row">
-                                <div class="col">
+                                <div class="col-md-4 col-12">
                                     <input type="text" class="form-control" id="profession"
                                         placeholder="e.g Electrician">
                                 </div>
-                                <div class="col">
+                                <div class="col-md-4 col-12">
                                     <select class="form-control">
                                         <option>Select Location</option>
                                         <option>Dhaka</option>
@@ -62,7 +84,7 @@
                                         <option>Sylet</option>
                                     </select>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-12">
                                     <button type="submit" class="btn btn-primary btn-block">
                                        <i class="fa fa-search"></i> Search
                                     </button>
@@ -79,7 +101,10 @@
         <div class="container">
             <div class="row">
                 <div class="col search-results-announcer pad-0">
-                    <p class="result-announcement text-muted"> <i class="fa fa-bullhorn text-primary"></i> Total 123 records found for your search Electrician at  Florida, USA.</p>
+                    <p class="result-announcement text-muted"> 
+                        <i class="fa fa-bullhorn text-primary"></i> Total 123 
+                            <span class="d-none d-md-inline">records found for your search</span> 
+                            Electrician<span class="d-sm-inline d-md-none">s found</span> at  Florida, USA.</p>
                 </div>
             </div>
         </div>
@@ -159,14 +184,14 @@
         <section class="footer bg-primary">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-sm-12 col-md-4">
                         <ul class="footer-menu">
                             <li><a href="/index.html">Home</a></li>
                             <li><a href="/pricing.html">Pricing</a></li>
                             <li><a href="/profile.html">Profile</a></li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-md-4">
                         <ul class="footer-menu">
                             <li><a href="#">Terms & Conditions</a></li>
                             <li><a href="#">Help & Support</a></li>
@@ -174,7 +199,7 @@
                         </ul>
 
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-md-4">
                         <ul class="footer-menu">
                             <li class=" social"><a href="http://facebook.com"><i class="fa fa-facebook fa-2x"></i></a></li>
                             <li class=" social"><a href="http://twitter.com"><i class="fa fa-twitter fa-2x"></i></a></li>
