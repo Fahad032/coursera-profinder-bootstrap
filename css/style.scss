@@ -1,3 +1,169 @@
+/** COLOR PALLETTE **/
+$primary: #3286D4;
+$deep-blue: #1A6CB9;
+$teal-blue: #0094FF;
+$orange: #FE820F;
+$gray: #6D6D6D;
+$default-gray: #C4C4C4;
+$white: #ffffff;
+$light-green: #17EA6C;
+$light-green-deep: #05BA4E;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0 auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.zero-margin{
+    @include zero-margin(0, 0);
+}
+
+.body{
+    background: $default-gray;
+    position: relative;
+}
+
+.bg-light-green{
+    background: $light-green;
+    border-color: $light-green;
+    &:hover{
+        background: $light-green-deep;
+        border-color: $light-green-deep
+    }
+}
 .navbar-brand{
-    font-size: 36px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-box-section{
+    background-image: url('../images/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 220px;
+}
+
+.search-box-wrapper{
+    background:rgba(110, 110, 110, 0.5);
+    height: 145px;
+    border: 5px solid $teal-blue;
+    border-radius: 8px;
+    color: $white;
+}
+
+.search-box-headline{
+    margin-top: 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+.search-results-announcer{
+    background: $white;
+    box-shadow: -1px 2px 6px rgba(0, 0, 0, 0.4);
+    margin-top: 1rem;
+}
+
+.result-announcement{
+    font-weight: bold;
+    line-height: 40px;
+    margin: 0;
+}
+
+
+.search-results{
+    
+}
+
+/* Profile details section */
+.profile-details-section{
+    padding: 15px 0; 
+    width: 100%;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+    /* position: fixed; */
+    /* top: 70px; */
+
+    .media{
+        margin: 0px auto;
+        
+        & img.avatar{
+            width: 150px;
+            height: 150px;
+        }
+
+        .media-body{
+            margin-top: 15px;
+        }
+    }
+}
+
+.profile-details-content{
+    /* margin-top: 170px; */
+}
+
+
+.feedback-section{
+    background-color: rgba(225, 225, 225, 0.8);
+    color: $gray;
+}
+
+.history-section-headline{
+    @include zero-margin(15px, 0)
+}
+
+.feedback-wrapper{
+    background: transparent;
+    border: 0;
+    
+    & .card-body{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.feedback-author{
+    display: block;
+    margin: 15px auto;
+}
+
+/* pricing page styles */
+
+.price-box-section{
+    padding: 30px 0;
+}
+
+.ratings{
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px; 
+}
+
+.footer-menu{
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    li{
+        margin-right: 15px;
+        display: block;        
+        a{
+            color: $white;
+            transition: all 0.8 ease-in-out;
+        }
+
+        a:hover{
+            opacity: 0.8;
+        }
+    }
+
+    li.social{
+        display: inline-block;
+    }
+}
+
+
+.copyright{
+    background: $deep-blue;
+    padding: 15px;
+    display: block;
 }
